@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LinkHub Pro - Professional link management platform for businesses and creators">
+    <meta name="keywords" content="link in bio, link management, business links, creator tools, social media hub">
+    <title>HLPFL - Connect With Us</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HLPFL - Connect With Us">
+    <meta property="og:description" content="Management for Independent Artists - Connect with our comprehensive music business services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hlpfl.org/images/favicon/hlpflgradientfullwordsvg.svg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HLPFL - Connect With Us">
+    <meta name="twitter:description" content="Management for Independent Artists - Connect with our comprehensive music business services">
+    <meta name="twitter:image" content="https://hlpfl.org/images/favicon/hlpflgradientfullwordsvg.svg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    
+    <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-shapes"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <span>HLPFL</span>
+            </div>
+            <button class="edit-toggle" id="editToggle" title="Edit Profile">
+                <i class="fas fa-edit"></i>
+            </button>
+        </header>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face" 
+                     alt="Profile" id="profile-img" class="profile-image">
+                <div class="verified-badge" id="verifiedBadge">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name" id="profile-name">Your Business Name</h1>
+                <p class="profile-title" id="profile-title">Professional Title</p>
+                <p class="profile-bio" id="profile-bio">
+                    Your professional bio goes here. Tell visitors about your business and what makes you unique.
+                </p>
+                <div class="profile-stats" id="profileStats">
+                    <div class="stat">
+                        <span class="stat-number" id="totalLinks">0</span>
+                        <span class="stat-label">Links</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="totalClicks">0</span>
+                        <span class="stat-label">Clicks</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact -->
+        <section class="quick-contact" id="quickContact">
+            <div class="contact-item email-item" data-platform="email">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value" id="contactEmail">contact@yourbusiness.com</span>
+                </div>
+                <div class="contact-action">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+            </div>
+            
+            <div class="contact-item phone-item" data-platform="phone">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value" id="contactPhone">+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-action">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Hub -->
+        <section class="social-hub">
+            <h2 class="section-title">Connect With Us</h2>
+            
+            <!-- Primary Social Platforms -->
+            <div class="social-grid">
+                <!-- Instagram -->
+                <div class="social-card instagram-card" data-platform="instagram">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>Instagram</h3>
+                            <p class="social-handle">@yourhandle</p>
+                        </div>
+                        <div class="social-badge">
+                            <i class="fas fa-fire"></i>
+                            <span>Hot</span>
+                        </div>
+                    </div>
+                    <div class="social-stats">
+                        <div class="social-stat">
+                            <span class="stat-count">12.5K</span>
+                            <span class="stat-type">Followers</span>
+                        </div>
+                        <div class="social-stat">
+                            <span class="stat-count">892</span>
+                            <span class="stat-type">Posts</span>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <button class="social-btn">View Profile</button>
+                        <button class="message-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- YouTube -->
+                <div class="social-card youtube-card" data-platform="youtube">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>YouTube</h3>
+                            <p class="social-handle">Your Channel</p>
+                        </div>
+                        <div class="social-badge verified">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <div class="social-stats">
+                        <div class="social-stat">
+                            <span class="stat-count">45.2K</span>
+                            <span class="stat-type">Subscribers</span>
+                        </div>
+                        <div class="social-stat">
+                            <span class="stat-count">128</span>
+                            <span class="stat-type">Videos</span>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <button class="social-btn">Watch Videos</button>
+                        <button class="subscribe-btn">
+                            <i class="fas fa-bell"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- TikTok -->
+                <div class="social-card tiktok-card" data-platform="tiktok">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>TikTok</h3>
+                            <p class="social-handle">@yourhandle</p>
+                        </div>
+                        <div class="social-badge trending">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Trending</span>
+                        </div>
+                    </div>
+                    <div class="social-stats">
+                        <div class="social-stat">
+                            <span class="stat-count">89.3K</span>
+                            <span class="stat-type">Followers</span>
+                        </div>
+                        <div class="social-stat">
+                            <span class="stat-count">2.1M</span>
+                            <span class="stat-type">Likes</span>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <button class="social-btn">Watch TikToks</button>
+                        <button class="follow-btn">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="social-card linkedin-card" data-platform="linkedin">
+                    <div class="social-header">
+                        <div class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="social-info">
+                            <h3>LinkedIn</h3>
+                            <p class="social-handle">Your Name</p>
+                        </div>
+                        <div class="social-badge professional">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Pro</span>
+                        </div>
+                    </div>
+                    <div class="social-stats">
+                        <div class="social-stat">
+                            <span class="stat-count">3.2K</span>
+                            <span class="stat-type">Connections</span>
+                        </div>
+                        <div class="social-stat">
+                            <span class="stat-count">156</span>
+                            <span class="stat-type">Posts</span>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <button class="social-btn">Connect</button>
+                        <button class="message-btn">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Streaming Platforms -->
+        <section class="streaming-section">
+            <h2 class="section-title">Music & Content</h2>
+            
+            <div class="streaming-grid">
+                <!-- Spotify -->
+                <div class="streaming-card spotify-card" data-platform="spotify">
+                    <div class="streaming-header">
+                        <div class="streaming-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="streaming-info">
+                            <h3>Spotify</h3>
+                            <p class="streaming-type">Artist Profile</p>
+                        </div>
+                        <div class="streaming-badge">
+                            <i class="fas fa-music"></i>
+                        </div>
+                    </div>
+                    <div class="streaming-stats">
+                        <div class="streaming-stat">
+                            <span class="stat-count">234K</span>
+                            <span class="stat-type">Monthly Listeners</span>
+                        </div>
+                    </div>
+                    <div class="streaming-footer">
+                        <button class="streaming-btn">Listen Now</button>
+                    </div>
+                </div>
+
+                <!-- Apple Music -->
+                <div class="streaming-card apple-music-card" data-platform="apple-music">
+                    <div class="streaming-header">
+                        <div class="streaming-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="streaming-info">
+                            <h3>Apple Music</h3>
+                            <p class="streaming-type">Music Library</p>
+                        </div>
+                        <div class="streaming-badge">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                    </div>
+                    <div class="streaming-footer">
+                        <button class="streaming-btn">Listen on Apple</button>
+                    </div>
+                </div>
+
+                <!-- SoundCloud -->
+                <div class="streaming-card soundcloud-card" data-platform="soundcloud">
+                    <div class="streaming-header">
+                        <div class="streaming-icon">
+                            <i class="fab fa-soundcloud"></i>
+                        </div>
+                        <div class="streaming-info">
+                            <h3>SoundCloud</h3>
+                            <p class="streaming-type">Audio Tracks</p>
+                        </div>
+                        <div class="streaming-badge">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                    <div class="streaming-footer">
+                        <button class="streaming-btn">Stream Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Links -->
+        <section class="links-section">
+            <h2 class="section-title">Quick Links</h2>
+            <div class="links-container" id="links-container">
+                <!-- Links will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Business Tools -->
+        <section class="business-tools">
+            <h2 class="section-title">Business Tools</h2>
+            
+            <div class="tools-grid">
+                <!-- Booking -->
+                <div class="tool-card booking-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>Book Appointment</h3>
+                        <p>Schedule a consultation or meeting</p>
+                    </div>
+                    <button class="tool-btn">Book Now</button>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="tool-card portfolio-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>Portfolio</h3>
+                        <p>View our work and case studies</p>
+                    </div>
+                    <button class="tool-btn">View Work</button>
+                </div>
+
+                <!-- Shop -->
+                <div class="tool-card shop-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>Online Shop</h3>
+                        <p>Browse products and services</p>
+                    </div>
+                    <button class="tool-btn">Shop Now</button>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="tool-card newsletter-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="tool-info">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe for updates and news</p>
+                    </div>
+                    <button class="tool-btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Dashboard (Edit Mode) -->
+        <section class="analytics-dashboard" id="analyticsDashboard" style="display: none;">
+            <h2 class="section-title">Analytics Overview</h2>
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <div class="analytics-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Total Clicks</h3>
+                        <span class="analytics-number" id="totalClicksAnalytics">0</span>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Unique Visitors</h3>
+                        <span class="analytics-number" id="uniqueVisitors">0</span>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Conversion Rate</h3>
+                        <span class="analytics-number" id="conversionRate">0%</span>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <div class="analytics-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="analytics-info">
+                        <h3>Avg. Session</h3>
+                        <span class="analytics-number" id="avgSession">0s</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-link"></i>
+                        <span>LinkHub Pro</span>
+                    </div>
+                    <p class="footer-tagline">Professional link management for modern businesses</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Contact Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LinkHub Pro. All rights reserved.</p>
+                <p>Made with ❤️ for businesses and creators</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="edit-modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Customize Your LinkHub</h2>
+                <button class="close-modal" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Profile Settings -->
+                <div class="settings-section">
+                    <h3>Profile Information</h3>
+                    <div class="form-group">
+                        <label for="editName">Business Name</label>
+                        <input type="text" id="editName" placeholder="Enter your business name">
+                    </div>
+                    <div class="form-group">
+                        <label for="editTitle">Professional Title</label>
+                        <input type="text" id="editTitle" placeholder="Enter your title">
+                    </div>
+                    <div class="form-group">
+                        <label for="editBio">Bio</label>
+                        <textarea id="editBio" rows="3" placeholder="Tell us about your business"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="editImage">Profile Image URL</label>
+                        <input type="url" id="editImage" placeholder="https://example.com/image.jpg">
+                    </div>
+                </div>
+
+                <!-- Contact Settings -->
+                <div class="settings-section">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input type="email" id="editEmail" placeholder="contact@yourbusiness.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">Phone</label>
+                        <input type="tel" id="editPhone" placeholder="+1 (555) 123-4567">
+                    </div>
+                </div>
+
+                <!-- Social Media Settings -->
+                <div class="settings-section">
+                    <h3>Social Media Links</h3>
+                    <div class="social-inputs">
+                        <div class="social-input-group">
+                            <label>Instagram</label>
+                            <input type="url" id="editInstagram" placeholder="https://instagram.com/yourhandle">
+                        </div>
+                        <div class="social-input-group">
+                            <label>YouTube</label>
+                            <input type="url" id="editYouTube" placeholder="https://youtube.com/yourchannel">
+                        </div>
+                        <div class="social-input-group">
+                            <label>TikTok</label>
+                            <input type="url" id="editTikTok" placeholder="https://tiktok.com/@yourhandle">
+                        </div>
+                        <div class="social-input-group">
+                            <label>LinkedIn</label>
+                            <input type="url" id="editLinkedIn" placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+                        <div class="social-input-group">
+                            <label>Spotify</label>
+                            <input type="url" id="editSpotify" placeholder="https://open.spotify.com/artist/yourid">
+                        </div>
+                        <div class="social-input-group">
+                            <label>Apple Music</label>
+                            <input type="url" id="editApple" placeholder="https://music.apple.com/yourprofile">
+                        </div>
+                        <div class="social-input-group">
+                            <label>SoundCloud</label>
+                            <input type="url" id="editSoundCloud" placeholder="https://soundcloud.com/yourhandle">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Theme Settings -->
+                <div class="settings-section">
+                    <h3>Theme Customization</h3>
+                    <div class="theme-inputs">
+                        <div class="form-group">
+                            <label for="editPrimaryColor">Primary Color</label>
+                            <input type="color" id="editPrimaryColor" value="#6366f1">
+                        </div>
+                        <div class="form-group">
+                            <label for="editSecondaryColor">Secondary Color</label>
+                            <input type="color" id="editSecondaryColor" value="#8b5cf6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="resetBtn">Reset to Default</button>
+                <button class="btn btn-primary" id="saveBtn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

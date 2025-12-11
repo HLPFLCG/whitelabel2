@@ -1,0 +1,15 @@
+<!-- This is a placeholder for the profile image
+Replace this with an actual image file named profile.jpg
+Recommended: 120x120px JPEG or PNG
+You can use any image service like Unsplash for a professional photo
+
+Example URLs you can use:
+- https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face
+- https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face
+- https://images.unsplash.com/photo-1494790108755-2616b612b786?w=120&h=120&fit=crop&crop=face
+
+Instructions:
+1. Download an image or use the URL above
+2. Save it as "profile.jpg" in the assets folder
+3. Or keep the URL in the profile image field in the editor
+-->

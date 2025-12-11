@@ -1,0 +1,28 @@
+{
+  "name": "whitelabel-linkinbio",
+  "version": "1.0.0",
+  "description": "A clean, professional, and fully customizable link-in-bio platform that you can brand as your own.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "build": "echo 'Static site - no build step required'",
+    "preview": "python -m http.server 8080",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "link-in-bio",
+    "white-label",
+    "static-site",
+    "responsive",
+    "cloudflare-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HLPFLCG/whitelabellinkinbio.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
